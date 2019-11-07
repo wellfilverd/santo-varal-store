@@ -12,7 +12,9 @@ describe Product do
     end
 
     it "returns the average rating of all comments" do
-
+      expected = 3
+      average = product.average_rating()
+      expect(average).to eq expected
     end
 
   end
