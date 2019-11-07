@@ -16,6 +16,14 @@ describe Product do
       average = product.average_rating()
       expect(average).to eq expected
     end
+  end
+
+  context "when the product has only comments" do
+    let(:product) { Product.new(description: "Nice bike") }
+
+    it "returns a product invalid" do
+      expect(product).not_to be_valid
+    end
 
   end
 end
