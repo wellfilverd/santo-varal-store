@@ -18,7 +18,7 @@ describe Product do
     end
   end
 
-  context "when the product has only comments" do
+  context "when the product has only description" do
     let(:product) { Product.new(description: "Nice bike") }
 
     it "returns a product invalid" do
